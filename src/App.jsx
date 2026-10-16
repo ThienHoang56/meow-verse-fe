@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function App() {
     const [cats, setCats] = useState([]);
     useEffect(() => {
-        fetch("http://api-meo.somee.com/api/cats")
+        fetch("https://api-meo.somee.com/api/cats")
             .then(res => res.json())
             .then(setCats)
             .catch(console.error);
